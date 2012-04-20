@@ -1,0 +1,5 @@
+    {
+      title: "$title",
+      link:  "$url$path/$fn.$default_flavour",
+      date:  "$dw, $da $mo $yr 12:13:00 +0900"
+    },

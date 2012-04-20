@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="$blog_language" lang="$blog_language">
+<head>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="googlebot" content="noindex,nofollow,noarchive" />
+<title>$blog_title$date_title::title$entry_title::title</title>
+<link rel="top" href="$url" />
+<link rel="stylesheet" href="$css::path" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="$url/index.rss" />
+<script type="text/javascript">
+function doPreview() {
+  var title = document.forms[0].title.value;
+  var body  = document.forms[0].body.value;
+  document.getElementById("wikieditish_preview").innerHTML = '<p>A quick preview will be rendered here when you click &quot;Preview&quot; button.<\/p><h3 class="title">' + title + '<\/h3>' + body;
+}
+</script>
+</head>
+<body>
+
+<div id="header">
+	<h1><a href="$url">$blog_title</a></h1>
+	<p>$blog_description</p>
+</div><!-- div#header -->
+
+<div id="contents">
+
+<div class="back_and_forth">
+	<p>
+		$back_and_forth::prev
+		$back_and_forth::main
+		$back_and_forth::next
+	</p>
+</div><!-- div.back_and_forth -->
+
+<div class="bookmarklet">
+	<p>Bookmarklet: <a href="$bookmarklet::script">BlosxomThis!</a></p>
+</div><!-- div.bookmarklet -->
+

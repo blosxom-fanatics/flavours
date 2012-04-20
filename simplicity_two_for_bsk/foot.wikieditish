@@ -1,0 +1,74 @@
+<div class="section" id="wikieditish_form">
+	<h3>Edit this entry</h3>
+	<form method="post" action="http://example.com/blog/xhtml/powered.wikieditish#wikieditish">
+		<p>wikieditish message: <em>Ready to edit this entry.</em></p>
+		<p>
+			<label>Title:<br />
+			<input type="edit" name="title" value="" class="edit" /></label>
+		</p>
+		<p>
+			<label>Body:<br />
+			<textarea name="body" rows="12" cols="48" class="edit"></textarea></label>
+		</p>
+		<p>
+			<label>Excerpt:<br />
+			<textarea name="excerpt" rows="4" cols="48" class="edit"></textarea></label>
+		</p>
+		<p>
+			<label>Excerpt:<br />
+			<textarea name="ping_url" rows="4" cols="48" class="edit"></textarea></label>
+		</p>
+		<p>
+			<label>Password:<br />
+			<input type="password" name="password" size="12" value="" id="password" class="edit" /></label>
+		</p>
+		<p>
+			<input type="hidden" name="plugin" value="wikieditish" />
+			<input type="button" value="Preview" onclick="doPreview()" class="btn" />
+			<input type="submit" name="post" value="Post" class="btn" />
+		</p>
+	</form>
+</div><!-- div.section -->
+
+<div class="section" id="wikieditish_preview">
+	<h3>Preview</h3>
+	<p>A quick preview will be rendered here when you click &quot;Preview&quot; button.</p>
+</div><!-- div.section -->
+
+</div><!-- div#contents -->
+
+<div id="sidebar">
+	<dl>
+		<dt>Search</dt>
+		<dd>
+			<form method="get" action="$google::path">
+				<p>
+					<input type="text" name="q" value="" class="edit" />
+					<input type="hidden" name="key" value="$google::key" />
+					<input type="submit" value="Go" class="btn" />
+				</p>
+			</form>
+		</dd>
+		<dt>Archives</dt>
+		<dd>$archives::archives</dd>
+		<dt>Categories</dt>
+		<dd>$categories::categories</dd>
+	</dl>
+</div><!-- div#sidebar -->
+
+<div id="footer">
+	<p id="copyrights">All contents of this site, unless otherwise noted, &#169; 2005 <a href="mailto:your@mail.address">Your Name</a>, and all rights reserved.</p>
+	<p id="banners">Powered by
+		<a href="http://www.blosxom.com/">blosxom $version</a>,
+<!-- delete if you wish: start -->
+		<a href="http://hail2u.net/archives/bsk.html">blosxom starter kit</a>,
+<!-- delete if you wish: end -->
+		<a href="http://www.perl.org/">Perl</a>,
+		<a href="http://validator.w3.org/check?uri=referer">XHTML</a>,
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>,
+		<a rel="alternate" type="application/rss+xml" href="$url/index.rss">RSS</a>
+	and my poor brain.</p>
+</div><!-- div#footer -->
+
+</body>
+</html>

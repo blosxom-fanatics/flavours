@@ -1,0 +1,43 @@
+</div>
+</div>
+
+<div id="right">
+<div class="sidebar">
+
+<h2>Search</h2>
+ 
+<div class="link-note">
+<form method="get" action="http://www.google.com/search">
+<label for="search" accesskey="4">Search this site:</label><br />
+<input type="text" name="q" value="" class="edit" id="search" /><br />
+<input type="hidden" name="q" value="site:example.com" />
+<input type="submit" value="Search" />
+</form>
+</div>
+
+<h2>Archives</h2>
+
+$archives::archives
+
+<h2>Categories</h2>
+
+$categories::categories
+
+<div class="link-note">
+<a href="$url/index.rss">Syndicate this site (XML)</a>
+</div>
+
+<div id="powered">
+Powered by<br /><a href="http://www.blosxom.com/?v=$version">blosxom $version</a><br />
+</div>
+
+</div>
+</div>
+
+<div style="clear: both;"> </div>
+
+</div>
+
+</body>
+</html>
+

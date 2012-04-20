@@ -1,0 +1,15 @@
+<form method="post" action="" enctype="application/x-www-form-urlencoded">
+<label>Blog Name:</label><br>
+<input type="text" name="blog_name" value="$blog_title" size="64"><br>
+<br>
+<label>URL:</label><br />
+<input type="text" name="url" value="$url$path/$fn.$default_flavour" size="64"><br>
+<br>
+<label>Title:</label><br />
+<input type="text" name="title" value="$title" size="64"><br>
+<br>
+<label>Excerpt:</label><br />
+<textarea name="excerpt" cols="64" rows="8">$excerpt::body</textarea><br>
+<br>
+<input type="submit" value="TrackBack"><br>
+</form>

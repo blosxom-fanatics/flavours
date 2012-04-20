@@ -1,0 +1,10 @@
+<div class="section">
+	<h3>$title</h3>
+	$body
+	<p class="meta">Posted at
+	<a href="$url$path/$fn.htm">$ti</a> in
+	<a href="$url$path/">$categories::alias</a> |
+	<a href="$url$path/$fn.htm#writebacks">WriteBacks ($writeback::count)</a> |
+	<a href="#wikieditish_form">Edit</a></p>
+</div><!-- div.section -->
+

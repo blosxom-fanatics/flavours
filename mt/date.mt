@@ -1,0 +1,1 @@
+<h2 class="date">$mo $da, $yr</h2>
